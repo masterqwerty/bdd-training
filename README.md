@@ -1,6 +1,6 @@
 # BDD Training
 
-This will be the example project I'll use to show an example of how to use cucumber.
+This will be the example project I'll use to show a quick example of the dev flow for BDD.
 
 ## Setup
 
