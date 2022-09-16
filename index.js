@@ -1,27 +1,27 @@
 const express = require("express");
 const app = express();
-const calculator = require("src/calculator");
-const pokedex = require("pokedex");
+const calculator = require("./src/calculator");
+const pokedex = require("./src/pokedex");
 
 app.use(express.json());
 
 app.post("/calculator/add", (req, res) => {
-	let body = JSON.parse(req.body);
+	let body = req.body;
 	res.send("Calculator add result.");
 });
 
 app.post("/calculator/subtract", (req, res) => {
-	let body = JSON.parse(req.body);
+	let body = req.body;
 	res.send("Calculator subtract result.");
 });
 
 app.post("/calculator/multiply", (req, res) => {
-	let body = JSON.parse(req.body);
+	let body = req.body;
 	res.send("Calculator multiply result.");
 });
 
 app.post("/calculator/divide", (req, res) => {
-	let body = JSON.parse(req.body);
+	let body = req.body;
 	res.send("Calculator divide result.");
 });
 
